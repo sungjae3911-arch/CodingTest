@@ -1,0 +1,8 @@
+s = input().rstrip()
+case = set()
+
+for i in range(len(s)):
+    for j in range(len(s)-i):
+        case.add(s[j:j+i+1])
+
+print(len(case))
